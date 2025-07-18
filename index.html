@@ -57,6 +57,96 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!--MOBILE MENU-->
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="button-close" type="button" data-menu-close>
+            <svg class="icon-close" width="8" height="8" fill="2E2F42">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <nav class="mobile-menu-nav">
+            <ul class="nav-list-mobile">
+              <li class="nav-item-mobile">
+                <a
+                  class="nav-link-mobile current"
+                  href="./index.html"
+                  target="_blank"
+                  >Studio</a
+                >
+              </li>
+              <li class="nav-item-mobile">
+                <a class="nav-link-mobile" href="" target="_blank">Portfolio</a>
+              </li>
+              <li class="nav-item-mobile">
+                <a class="nav-link-mobile" href="" target="_blank">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address class="contacts-mobile">
+            <ul class="contacts-list-mobile">
+              <li class="contacs-item-mobile">
+                <a
+                  class="contacts-link-mobile"
+                  href="tel:+110001111111"
+                  target="_blank"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+
+              <li class="contacs-item-mobile">
+                <a
+                  class="contacts-link-mobile"
+                  href="mailto:info@devstudio.com"
+                  target="_blank"
+                  >info@devstudio.com
+                </a>
+              </li>
+            </ul>
+          </address>
+
+          <ul class="icon-mobile-block">
+            <li class="item-icon-mobile">
+              <a class="link-icon-mobile" href="" target="_blank">
+                <svg class="icon-mobile" width="24" height="24" fill="#f4f4fd">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item-icon-mobile">
+              <a class="link-icon-mobile" href="" target="_blank">
+                <svg class="icon-mobile" width="24" height="24" fill="#f4f4fd">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item-icon-mobile">
+              <a class="link-icon-mobile" href="" target="_blank">
+                <svg class="icon-mobile" width="24" height="24" fill="#f4f4fd">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item-icon-mobile">
+              <a class="link-icon-mobile" href="" target="_blank">
+                <svg class="icon-mobile" width="24" height="24" fill="#f4f4fd">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -129,7 +219,7 @@
       <!--TEAM-->
       <section class="team">
         <div class="container">
-          <h2 class="team-title">Our Team</h2>
+          <h2 class="section-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-card">
               <img
@@ -385,7 +475,7 @@
       <!--PORTFOLIO-->
       <section class="portfolio">
         <div class="container">
-          <h2 class="portfolio-title">Our Portfolio</h2>
+          <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-project-card">
               <div class="thumbnail-sample">
@@ -566,12 +656,7 @@
             /></label>
             <button class="button-footer" type="submit">
               Subscribe
-              <svg
-                class="icon-footer-send"
-                width="24"
-                height="24"
-                fill="#FFFFFF"
-              >
+              <svg width="24" height="24" fill="#FFFFFF">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
@@ -583,8 +668,8 @@
     <!--MODAL+BACKDROP-->
     <div class="backdrop" data-modal>
       <div class="modal">
-        <button class="button-modal-close" type="button" data-modal-close>
-          <svg class="icon-modal-close" width="8" height="8" fill="2E2F42">
+        <button class="button-close" type="button" data-modal-close>
+          <svg class="icon-close" width="8" height="8" fill="2E2F42">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -672,5 +757,6 @@
     </div>
     <!--CONNECTING MODAL-->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
